@@ -1,4 +1,4 @@
-## Question 1: Reverse a Linked List (Full Program) ##
+# Question 1: Reverse a Linked List
 
 Write a complete program that:
 

@@ -48,7 +48,18 @@ LinkedList::~LinkedList() {
 
 void LinkedList::insertEnd(int value){
 
-    Node* newNode = new Node(value);
+    Node* newNode = nullptr; // wanted to see how to check just like malloc in C, got this
+
+    try{
+
+        newNode = new Node(value);
+
+    }
+    catch (const std::bad_alloc& error){
+
+        std::cerr << "Allocation failed: " << error.what() << std::endl;
+
+    }
 
     if(head == nullptr){
 
